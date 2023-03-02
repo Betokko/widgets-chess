@@ -1,14 +1,13 @@
-import {fireEvent, render, screen} from "@testing-library/react";
+import {render, screen} from "@testing-library/react";
 import {Button} from './Button'
 import { Provider } from 'react-redux'
-import configureStore from 'redux-mock-store'
-
+import configureStore from 'redux-mock-store';
 
 describe('Текстирование кнопки', () => {
 
     const initialState = {button: {data: {}, status: 'idle'}}
     const mockStore = configureStore()
-    let store,wrapper
+    let store
 
     test('Компонент рендерится', () => {
         store = mockStore(initialState)
