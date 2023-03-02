@@ -1,0 +1,42 @@
+.button {
+    width: fit-content;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    background: #fff;
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--secondary) 0 0 0.5rem;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    box-shadow: var(--primary) 0 0 0.5rem;
+    opacity: 0.75;
+}
+
+.buttonClicked {
+    width: fit-content;
+    color: #fff;
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--secondary) 0 0 0.5rem;
+    transition: all 0.3s;
+}
+
+.buttonClicked:hover {
+    opacity: 0.75;
+}

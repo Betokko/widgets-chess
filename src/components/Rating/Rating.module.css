@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 320px;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.stars svg {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.stars svg:hover  {
+    fill: var(--star);
+    transform: scale(1.5);
+}
+
+.stars .rating1:hover ~ svg,
+.stars .rating2:hover ~ svg,
+.stars .rating3:hover ~ svg,
+.stars .rating4:hover ~ svg,
+.stars .rating5:hover ~ svg {
+    fill: var(--star);
+}
+
+
+.smile {
+    cursor: pointer;
+    font-size: 4rem;
+    position: absolute;
+    right: 0;
+}
+

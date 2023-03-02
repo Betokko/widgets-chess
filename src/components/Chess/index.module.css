@@ -1,0 +1,40 @@
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+.board {
+    width: calc(5rem*8);
+    height: calc(5rem*8);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullCell {
+    cursor: pointer;
+}
+.cell:hover {
+    opacity: 0.75;
+}
+
+.dark {
+    background: var(--primary);
+}
+
+.light {
+    background: var(--star);
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: #fff;
+}

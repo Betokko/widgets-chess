@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --primary: #cd5c5c;
+  --secondary: #888;
+  --star: #ffb02e;
+}
